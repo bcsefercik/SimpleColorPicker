@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E30F4A21D79EED10020931F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E30F4A11D79EED10020931F /* ViewController.swift */; };
+		4E30F4A41D79F05B0020931F /* BCSColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E30F4A31D79F05B0020931F /* BCSColorPicker.swift */; };
+		4E8BA50E1D79CF990044FA81 /* FlatColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8BA50D1D79CF990044FA81 /* FlatColors.swift */; };
 		C29BE8F71D795CAA00838102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BE8F61D795CAA00838102 /* AppDelegate.swift */; };
 		C29BE8FC1D795CAB00838102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29BE8FA1D795CAB00838102 /* Main.storyboard */; };
 		C29BE8FE1D795CAB00838102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29BE8FD1D795CAB00838102 /* Assets.xcassets */; };
 		C29BE9011D795CAB00838102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29BE8FF1D795CAB00838102 /* LaunchScreen.storyboard */; };
-		C29BE90B1D796C1C00838102 /* BCSColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BE9081D796C1C00838102 /* BCSColorPicker.swift */; };
-		C29BE90C1D796C1C00838102 /* BCSColorPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BE9091D796C1C00838102 /* BCSColorPickerCell.swift */; };
-		C29BE90D1D796C1C00838102 /* HaydarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29BE90A1D796C1C00838102 /* HaydarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E30F4A11D79EED10020931F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E30F4A31D79F05B0020931F /* BCSColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCSColorPicker.swift; sourceTree = "<group>"; };
+		4E8BA50D1D79CF990044FA81 /* FlatColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatColors.swift; sourceTree = "<group>"; };
 		C29BE8F31D795CAA00838102 /* BCSColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCSColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29BE8F61D795CAA00838102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C29BE8FB1D795CAB00838102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C29BE8FD1D795CAB00838102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C29BE9001D795CAB00838102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C29BE9021D795CAB00838102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C29BE9081D796C1C00838102 /* BCSColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCSColorPicker.swift; sourceTree = "<group>"; };
-		C29BE9091D796C1C00838102 /* BCSColorPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCSColorPickerCell.swift; sourceTree = "<group>"; };
-		C29BE90A1D796C1C00838102 /* HaydarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaydarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E30F4A51D79F06C0020931F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C29BE8F61D795CAA00838102 /* AppDelegate.swift */,
+				C29BE8FD1D795CAB00838102 /* Assets.xcassets */,
+				C29BE8FF1D795CAB00838102 /* LaunchScreen.storyboard */,
+				C29BE9021D795CAB00838102 /* Info.plist */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		C29BE8EA1D795CAA00838102 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +69,11 @@
 		C29BE8F51D795CAA00838102 /* BCSColorPicker */ = {
 			isa = PBXGroup;
 			children = (
-				C29BE8F61D795CAA00838102 /* AppDelegate.swift */,
-				C29BE9081D796C1C00838102 /* BCSColorPicker.swift */,
-				C29BE9091D796C1C00838102 /* BCSColorPickerCell.swift */,
-				C29BE90A1D796C1C00838102 /* HaydarViewController.swift */,
+				4E30F4A51D79F06C0020931F /* Helpers */,
+				4E30F4A31D79F05B0020931F /* BCSColorPicker.swift */,
+				4E30F4A11D79EED10020931F /* ViewController.swift */,
 				C29BE8FA1D795CAB00838102 /* Main.storyboard */,
-				C29BE8FD1D795CAB00838102 /* Assets.xcassets */,
-				C29BE8FF1D795CAB00838102 /* LaunchScreen.storyboard */,
-				C29BE9021D795CAB00838102 /* Info.plist */,
+				4E8BA50D1D79CF990044FA81 /* FlatColors.swift */,
 			);
 			path = BCSColorPicker;
 			sourceTree = "<group>";
@@ -142,9 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C29BE90D1D796C1C00838102 /* HaydarViewController.swift in Sources */,
-				C29BE90C1D796C1C00838102 /* BCSColorPickerCell.swift in Sources */,
-				C29BE90B1D796C1C00838102 /* BCSColorPicker.swift in Sources */,
+				4E30F4A41D79F05B0020931F /* BCSColorPicker.swift in Sources */,
+				4E30F4A21D79EED10020931F /* ViewController.swift in Sources */,
+				4E8BA50E1D79CF990044FA81 /* FlatColors.swift in Sources */,
 				C29BE8F71D795CAA00838102 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +305,7 @@
 				C29BE9071D795CAB00838102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

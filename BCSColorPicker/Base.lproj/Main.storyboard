@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Haydar View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HaydarViewController" customModule="BCSColorPicker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BCSColorPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,23 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gZ-oc-0WN">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-PP-gLy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gZ-oc-0WN">
+                                <rect key="frame" x="131" y="216" width="338" height="169"/>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="C7O-4y-bgZ"/>
+                                    <constraint firstAttribute="height" constant="169" id="Vwq-j8-DMV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Change My Background">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="haydarTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSn-cj-5FP"/>
+                                    <action selector="changeMyBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zy6-a6-K86"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9gZ-oc-0WN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQe-et-QMf"/>
-                            <constraint firstItem="9gZ-oc-0WN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xC6-xW-wXX"/>
+                            <constraint firstItem="9gZ-oc-0WN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0As-PI-GpI"/>
+                            <constraint firstItem="2EH-PP-gLy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3W1-Nz-fmv"/>
+                            <constraint firstItem="2EH-PP-gLy" firstAttribute="centerX" secondItem="9gZ-oc-0WN" secondAttribute="centerX" id="DCs-V4-Uuz"/>
+                            <constraint firstItem="2EH-PP-gLy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OFy-Zs-j9E"/>
+                            <constraint firstItem="2EH-PP-gLy" firstAttribute="centerY" secondItem="9gZ-oc-0WN" secondAttribute="centerY" id="apj-WV-S7A"/>
+                            <constraint firstItem="9gZ-oc-0WN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g2F-th-TzS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="changeMyBackgroundButton" destination="9gZ-oc-0WN" id="9Rk-h3-hwU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="226"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="540" height="540"/>
+    </resources>
 </document>
