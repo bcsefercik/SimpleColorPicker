@@ -13,7 +13,7 @@ class BCSColorPicker: UIViewController, UICollectionViewDataSource, UICollection
     @IBInspectable
     var numberOfColorsInARow: Int = 6
     @IBInspectable
-    var backgroundColor = UIColor.clearColor()
+    var backgroundColor = UIColor.whiteColor()
     @IBInspectable
     var width:CGFloat = 260
     @IBInspectable
@@ -77,7 +77,7 @@ class BCSColorPicker: UIViewController, UICollectionViewDataSource, UICollection
             cv.layer.borderWidth = self.border
             cv.layer.cornerRadius = self.radius
             cv.layer.borderColor = self.borderColor.CGColor
-            cv.backgroundColor = self.borderColor
+            cv.backgroundColor = self.backgroundColor
             cv.registerClass(BCSColorPickerCell.self, forCellWithReuseIdentifier: "colorPickerCell")
             return cv
         }()
@@ -125,7 +125,7 @@ class BCSColorPicker: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("colorPickerCell", forIndexPath: indexPath) as! BCSColorPickerCell
-        cell.layer.borderWidth = 0.5
+        cell.layer.borderWidth = 0.2
         cell.layer.borderColor = backgroundColor.CGColor
         cell.backgroundColor = colorPalette[indexPath.row]
         return cell
@@ -136,7 +136,6 @@ class BCSColorPicker: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     @objc private func touchedCancel(sender: UIButton!){
-        print("haydar")
         self.dismissPicker(nil, index: -1)
     }
     
