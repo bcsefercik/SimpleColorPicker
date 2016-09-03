@@ -1,4 +1,4 @@
-#BCS Color Picker for Swift
+#BCS Simple Color Picker for Swift
 
 ##Description
 
